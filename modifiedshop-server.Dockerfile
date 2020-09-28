@@ -1,6 +1,6 @@
 FROM php:7.2
 RUN docker-php-ext-install mysqli
-RUN apt-get update -y && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev
+RUN apt-get update -y && apt-get install -y curl libpng-dev libjpeg-dev libfreetype6-dev
 RUN apt-get update && \
     apt-get install -y \
         zlib1g-dev
